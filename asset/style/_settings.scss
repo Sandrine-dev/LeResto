@@ -1,6 +1,42 @@
-// VARIABLES
-$white : rgb(255, 254, 254);
+// FONTS
+@font-face {
+    font-family: "Allura";
+    src: url(../font/Allura-Regular.ttf);
+}
 
+@font-face {
+    font-family: "Poppins";
+    src: url(../font/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto-Light.ttf);
+}
+
+// VARIABLES
+$white1 : rgb(255,254,254);
+$white2: rgb(238,238,238);
+$black1 : rgb(33,32,30);
+$black2 : rgb(0,0,0);
+$gray1: rgb(93,91,86);
+$gay2: rgb(187,188,189);
+$gold1: rgb(165,114,72);
+$font1 : "Allura", Arial, Helvetica, sans-serif;
+$font2 : "Poppins", Arial, Helvetica, sans-serif;
+$font3 : "Roboto", Arial, Helvetica, sans-serif;
+
+// MIXINS
+
+@mixin title{
+  font-family: $font2;
+  text-transform: uppercase;
+}
+
+@mixin styleTitle {
+    font-family: $font1;
+    color: $gold1;
+}
 
 
 // BODY
@@ -9,6 +45,7 @@ $white : rgb(255, 254, 254);
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: $font3;
 }
 
 html{
@@ -16,6 +53,14 @@ html{
 }
 
 a, a:visited{
-  color: $white;
+  color: $white1;
   text-decoration: none;
+}
+
+h1, h2 , h4{
+    @include title;
+}
+
+h3{
+    @include styleTitle;
 }

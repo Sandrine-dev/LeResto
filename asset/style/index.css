@@ -1,8 +1,21 @@
+@font-face {
+  font-family: "Allura";
+  src: url(../font/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../font/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-Light.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -12,4 +25,14 @@ html {
 a, a:visited {
   color: rgb(255, 254, 254);
   text-decoration: none;
+}
+
+h1, h2, h4 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Allura", Arial, Helvetica, sans-serif;
+  color: rgb(165, 114, 72);
 }/*# sourceMappingURL=index.css.map */
