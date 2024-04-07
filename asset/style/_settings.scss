@@ -1,3 +1,9 @@
+// VARIABLES
+$white : rgb(255, 254, 254);
+
+
+
+// BODY
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +13,9 @@
 
 html{
   scroll-behavior: smooth;
+}
+
+a, a:visited{
+  color: $white;
+  text-decoration: none;
 }
