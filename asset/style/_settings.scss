@@ -36,6 +36,7 @@ $font3 : "Roboto", Arial, Helvetica, sans-serif;
 @mixin styleTitle {
     font-family: $font1;
     color: $gold1;
+    text-transform: none;
 }
 
 
@@ -46,6 +47,7 @@ $font3 : "Roboto", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   list-style: none;
   font-family: $font3;
+  text-align: center;
 }
 
 html{

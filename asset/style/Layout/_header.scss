@@ -1,0 +1,64 @@
+header{
+    background: url(../img/bg-slider-06.jpg) no-repeat fixed center/cover;
+    min-height: 100vh;
+    position: relative;
+    nav{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        width: 90%;
+        margin: 0 auto;
+        padding: 25px 0;
+        align-items: center;
+        .nav_left h3{
+            color: $white1;
+            font-size: 3rem;
+        }
+        .nav_middle ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 40px;
+            text-transform: uppercase;
+        }
+        .nav_right ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }      
+    }
+
+    .header_content {
+        margin: 0 auto;
+        color: $white1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        .header_box{
+            .title{
+                h2{
+                @include styleTitle;
+                font-size: 4rem;
+                font-weight: 100;
+                }
+                h1{
+                    font-size: 5rem;
+                    letter-spacing: 10px;
+                    margin-top: -40px;
+                }
+            }
+            img{
+                margin: 55px auto;
+            }
+            p{
+                text-transform: uppercase;
+                letter-spacing: 10px;
+            }
+        }
+
+    }
+}
