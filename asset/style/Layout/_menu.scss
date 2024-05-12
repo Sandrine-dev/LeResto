@@ -1,0 +1,74 @@
+#menu {
+    background: url(../img/bg-menu-01.jpg) no-repeat center bottom;
+    padding-bottom: 20px;
+    .container{
+        margin:  35px auto;
+        h3{
+            font-size: 2.3rem;
+            font-weight: 100;
+            margin-bottom: 35px;
+        }
+        .menu_nav{
+            color: $white2;
+            width: 60%;
+            margin: 35px auto;
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }
+            li{
+                position: relative;
+                display: block;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    width: 100%;
+                    background: white;
+                    transform: translateX(-100%);
+                    bottom: -10px;
+                }
+            }
+        }
+        .menu_container{
+            background: $white2;
+            width: 60%;
+            margin: 45px auto;
+            border-top: 4px solid $gold1;
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            .menu_box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                border-bottom: 1px dashed $gray2;
+                padding: 10px 0;
+                .dish_content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    
+                    width: 95%;
+                    padding: 15px;
+                    h4 , p{
+                        font-weight: 100;
+                        text-align: left;
+                    }
+                    h4{
+                        font-size: 0.9rem;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+                h6{
+                    font-size: 1.3rem;
+                    font-weight: 100;
+                    color: $gold1;
+                }
+            }
+        }
+    }
+}
