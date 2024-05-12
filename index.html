@@ -243,73 +243,81 @@
       <section id="booking">
         <div class="container">
           <div class="left_container">
-            <h3>Time</h3>
-            <h2>Open</h2>
-            <img
-              src="./asset/img/ic-plate.png"
-              alt="silverware"
-              class="silverware"
-            />
-            <h4>Monday - Friday</h4>
-            <p>
-              7AM - 11AM (Breakfast)<br />
-              11AM- 10PM (Lunch/Dinner)
-            </p>
-            <h4>Saturday / Sunday</h4>
-            <p>
-              8AM - 1PM (Brunch)<br />
-              1PM - 9PM (Lunch/Dinner)
-            </p>
-            <h4>+15 890 979 25 52</h4>
+            <div class="box">
+              <h3>Time</h3>
+              <h2>Open</h2>
+              <img
+                src="./asset/img/ic-plate.png"
+                alt="silverware"
+                class="silverware"
+              />
+              <div class="hour_box">
+                <h4>Monday - Friday</h4>
+                <p>
+                  7AM - 11AM (Breakfast)<br />
+                  11AM- 10PM (Lunch/Dinner)
+                </p>
+              </div>
+              <div class="hour_box">
+                <h4>Saturday / Sunday</h4>
+                <p>
+                  8AM - 1PM (Brunch)<br />
+                  1PM - 9PM (Lunch/Dinner)
+                </p>
+              </div>
+              <h4>+15 890 979 25 52</h4>
+            </div>
           </div>
           <div class="right_container">
-            <h3>Reservation</h3>
-            <h2>Online Booking</h2>
-            <img
-              src="./asset/img/ic-plate.png"
-              alt="silverware"
-              class="silverware"
-            />
-            <div class="form">
-              <form action="">
-                <div class="grid_form">
-                  <select name="people" id="nbr_people">
-                    <option value="">People</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                  </select>
-                  <input
-                    type="date"
-                    id="date_book"
-                    name="date"
-                    value="2024-01-01"
-                    min="2024-01-01"
-                    max="2024-12-31/"
-                  />
-                  <input
-                    type="time"
-                    id="appt"
-                    name="appt"
-                    min="07:00"
-                    max="22:00"
-                    required
-                  />
-                  <input type="text" id="name" name="name" value="Name" />
-                  <input type="text" id="phone" name="phone" value="Phone" />
-                  <input type="text" id="email" name="email" value="Email" />
-                </div>
-              </form>
-              <button>Book Now</button>
+            <div class="box">
+              <h3>Reservation</h3>
+              <h2>Online Booking</h2>
+              <img
+                src="./asset/img/ic-plate.png"
+                alt="silverware"
+                class="silverware"
+              />
+              <div class="form">
+                <form action="">
+                  <div class="grid_form">
+                    <select name="people" id="nbr_people">
+                      <option value="">People</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                    <input
+                      type="date"
+                      id="date_book"
+                      name="date"
+                      value="2024-01-01"
+                      min="2024-01-01"
+                      max="2024-12-31/"
+                    />
+                    <input
+                      type="time"
+                      id="appt"
+                      name="appt"
+                      min="07:00"
+                      max="22:00"
+                      required
+                    />
+                    <input type="text" id="name" name="name" value="Name" />
+                    <input type="text" id="phone" name="phone" value="Phone" />
+                    <input type="text" id="email" name="email" value="Email" />
+                  </div>
+                </form>
+                <button>Book Now</button>
+              </div>
             </div>
           </div>
         </div>

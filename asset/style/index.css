@@ -156,7 +156,7 @@ header .header_content .header_box p {
 
 #menu {
   background: url(../img/bg-menu-01.jpg) no-repeat center bottom;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 #menu .container {
   margin: 35px auto;
@@ -226,4 +226,93 @@ header .header_content .header_box p {
   font-size: 1.3rem;
   font-weight: 100;
   color: rgb(165, 114, 72);
+}
+
+#booking .container {
+  width: 80%;
+  margin: 55px auto;
+  display: grid;
+  grid-template-columns: 33% 67%;
+}
+#booking .container .left_container {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 254, 254);
+}
+#booking .container .left_container .box {
+  margin: 25px;
+  padding: 25px;
+  border: 1px rgb(255, 254, 254) dashed;
+}
+#booking .container .left_container .box h3 {
+  font-size: 2.3rem;
+  font-weight: 100;
+  margin-bottom: -15px;
+}
+#booking .container .left_container .box img {
+  margin: 25px auto;
+  height: 30px;
+}
+#booking .container .left_container .box h4 {
+  margin: 10px;
+  color: rgb(165, 114, 72);
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+#booking .container .left_container .box .hour_box {
+  margin-bottom: 35px;
+}
+#booking .container .right_container {
+  background: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#booking .container .right_container .box {
+  width: 90%;
+}
+#booking .container .right_container .box h3 {
+  font-size: 2.4rem;
+  font-weight: 100;
+  margin-bottom: -15px;
+}
+#booking .container .right_container .box img {
+  margin: 25px auto;
+}
+#booking .container .right_container .box .form .grid_form {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 80%;
+  margin: 10px auto;
+}
+#booking .container .right_container .box .form .grid_form select,
+#booking .container .right_container .box .form .grid_form input {
+  border: none;
+  background: rgb(238, 238, 238);
+  width: 85%;
+  font-size: 0.9rem;
+  margin: 20px 3px;
+  padding: 15px 0;
+  border-bottom: 1px rgb(187, 188, 189) solid;
+  text-align: left;
+}
+#booking .container .right_container .box .form .grid_form select option {
+  text-align: left;
+}
+#booking .container .right_container .box .form .grid_form input[type=text] {
+  color: rgb(93, 91, 86);
+}
+#booking .container .right_container .box .form button {
+  background: rgb(33, 32, 30);
+  color: rgb(255, 254, 254);
+  border: 2px solid rgb(33, 32, 30);
+  border-radius: 25px;
+  height: 45px;
+  width: 170px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
 }/*# sourceMappingURL=index.css.map */
