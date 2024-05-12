@@ -20,7 +20,7 @@ $white2: rgb(238,238,238);
 $black1 : rgb(33,32,30);
 $black2 : rgb(0,0,0);
 $gray1: rgb(93,91,86);
-$gay2: rgb(187,188,189);
+$gray2: rgb(187,188,189);
 $gold1: rgb(165,114,72);
 $font1 : "Allura", Arial, Helvetica, sans-serif;
 $font2 : "Poppins", Arial, Helvetica, sans-serif;
@@ -65,4 +65,8 @@ h1, h2 , h4{
 
 h3{
     @include styleTitle;
+}
+
+.silverware{
+  height: 40px;
 }

@@ -1,0 +1,48 @@
+#home{
+    .container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 50% 50%;
+        .left_container{
+            background: $white2;
+            .box_container{
+                margin: 15px;
+                border: 1px dashed $gold1;
+                padding: 25px;
+                .title_container{
+                    h3{
+                        font-size: 2.3rem;
+                        font-weight: 100;
+                        margin-bottom: -15px;
+                    }
+                }
+                .silverware{
+                    margin: 30px auto;
+                }
+                .chef_name{
+                    margin-top: 35px;
+                    img{
+                        margin: 15px auto;
+                        border-radius: 50px;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    h5{
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                         margin-bottom: -5px;
+                    }
+                    h4{
+                       font-size: 0.8rem;
+                       color: $gray2;
+                       font-weight: 500;
+                    }
+                }
+            }
+        }
+        .right_container{
+            background: url(../img/store-01.jpg) center/cover;
+            height: 100%;
+        }
+    }
+}
