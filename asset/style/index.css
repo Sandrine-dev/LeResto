@@ -452,7 +452,7 @@ header .header_content .header_box p {
 }
 
 #notice {
-  padding-bottom: 180px;
+  padding-bottom: 240px;
   margin-top: 125px;
   position: relative;
 }
@@ -497,4 +497,64 @@ header .header_content .header_box p {
   font-size: 1.2rem;
   font-weight: 100;
   color: rgb(165, 114, 72);
+}
+
+footer {
+  background: url(../img/bg-footer.jpg) center/cover;
+  padding: 65px 32px;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  color: rgb(238, 238, 238);
+}
+footer .container h3, footer .container h4, footer .container p {
+  text-align: left;
+}
+footer .left_container {
+  padding-right: 30px;
+  line-height: 35px;
+}
+footer .left_container h3 {
+  font-size: 2.3rem;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+footer .left_container p {
+  color: rgb(187, 188, 189);
+}
+footer .right_container {
+  padding-left: 30px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+footer .right_container h4 {
+  font-weight: 100;
+}
+footer .right_container .newsletter {
+  text-align: start;
+}
+footer .right_container .newsletter input {
+  margin-top: 15px;
+  background: none;
+  border: 1px solid rgba(166, 114, 69, 0.151);
+  padding: 7px 13px;
+  width: 250px;
+  color: rgb(187, 188, 189);
+}
+footer .right_container .social_network {
+  display: flex;
+  align-items: center;
+}
+footer .right_container .social_network ul {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+  margin-left: 15px;
+}
+footer .right_container .social_network ul i {
+  color: rgb(93, 91, 86);
+  font-size: 1.2rem;
 }/*# sourceMappingURL=index.css.map */
