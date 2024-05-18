@@ -5,6 +5,9 @@
         margin: 55px auto;
         display: grid;
         grid-template-columns: 33% 67%;
+        @media screen and (max-width: 970px) {
+            grid-template-columns: 1fr;
+        }
         .left_container{
             background: $black2;
             color: $white1;
@@ -38,6 +41,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @media screen and (max-width: 970px) {
+                padding: 25px 0;
+            }
             .box{
                 width: 90%;
                 h3{
@@ -57,6 +63,9 @@
                     justify-items: center;
                     width: 80%;
                     margin: 10px auto;
+                    @media screen and (max-width: 770px) {
+                        grid-template-columns: 1fr;
+                    }
                     select, 
                     input{
                         border: none;

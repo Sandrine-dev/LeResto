@@ -13,6 +13,10 @@ header{
         margin: 0 auto;
         padding: 25px 0;
         align-items: center;
+        @media screen and (max-width: 820px) {
+            display: flex;
+            justify-content: space-around;
+        }
         .nav_left h3{
             color: $white1;
             font-size: 3rem;
@@ -23,11 +27,19 @@ header{
             align-items: center;
             margin: 0 40px;
             text-transform: uppercase;
+             @media screen and (max-width: 820px) {
+                display: none;
+            }
         }
         .nav_right ul{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media screen and (max-width: 820px) {
+                display: flex;
+                justify-content: space-around;
+                width: 150px;
+            }   
         }      
     }
 
@@ -44,11 +56,18 @@ header{
                 @include styleTitle;
                 font-size: 4rem;
                 font-weight: 100;
+                @media screen and (max-width: 670px) {
+                    font-size: 3rem;
+                }
                 }
                 h1{
                     font-size: 5rem;
                     letter-spacing: 10px;
                     margin-top: -40px;
+                    @media screen and (max-width: 670px) {
+                        font-size: 3rem;
+                        margin-top: 0;
+                    }
                 }
             }
             img{

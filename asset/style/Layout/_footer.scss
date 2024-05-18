@@ -1,13 +1,18 @@
 footer{
     background: url(../img/bg-footer.jpg) center/cover;
     padding: 65px 32px;
-
+    @media screen and (max-width: 970px) {
+        background: $black1;
+    }
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 80%;
         margin: 0 auto;
         color: $white2;
+        @media screen and (max-width: 970px) {
+            grid-template-columns: 1fr;
+        }
         h3 ,h4 ,p{
             text-align: left;
         }
@@ -15,10 +20,15 @@ footer{
     .left_container{
         padding-right: 30px;
         line-height: 35px;
+        @media screen and (max-width: 970px) {
+            display: none;
+        }
+
         h3{
             font-size: 2.3rem;
             font-weight: 100;
             margin-bottom: 15px;
+           
             }
             p{
                 color: $gray2;
@@ -28,8 +38,14 @@ footer{
         padding-left: 30px;
         display: grid;
         grid-template-rows: 1fr 1fr;
+        @media screen and (max-width: 520px) {
+            padding-left: 0;
+        }
         h4{
             font-weight: 100;
+            @media screen and (max-width: 520px) {
+                font-size: 0.9rem;
+            } 
         }
         .newsletter{
             text-align: start;
@@ -50,9 +66,15 @@ footer{
                 justify-content: space-around;
                 width: 250px;
                 margin-left: 15px;
+                @media screen and (max-width: 410px) {
+                    width: 150px;
+                }
                 i{
                     color: $gray1;
                     font-size: 1.2rem;
+                    @media screen and (max-width: 520px) {
+                        font-size: 0.9rem;
+                    }   
                 }
             }
         }

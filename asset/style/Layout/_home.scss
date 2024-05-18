@@ -3,6 +3,9 @@
         display: grid;
         align-items: center;
         grid-template-columns: 50% 50%;
+        @media screen and (max-width: 850px) {
+            grid-template-columns: 1fr;
+        }
         .left_container{
             background: $white2;
             .box_container{
@@ -38,6 +41,9 @@
         .right_container{
             background: url(../img/store-01.jpg) center/cover;
             height: 100%;
+            @media screen and (max-width: 850px) {
+                display: none;
+            }
         }
     }
 }
