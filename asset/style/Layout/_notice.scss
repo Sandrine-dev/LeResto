@@ -1,0 +1,50 @@
+#notice{
+    padding-bottom: 180px;
+    margin-top: 125px;
+    position: relative;
+    &:after {
+        content: "";
+        height: 350px;
+        width: 100%;
+        position: absolute;
+        background: url(../img/gmap.jpg)  center/cover;
+        left: 0;
+        bottom: 0;
+    }
+    .container{
+        z-index: 3;
+        position: relative;
+        img{
+            position: absolute;
+            transform: translateY(-75px) translateX(-50px);
+        }
+        .box_container{
+            width: 78%;
+            margin: 0 auto;
+            background: $white2;
+            padding: 50px;
+            p{
+                font-size: 1.2rem;
+                line-height: 1.8;
+                font-weight: 100;
+                margin: 25px;
+                i{
+                    font-size: 1rem;
+                }
+            }
+            .chef_name{
+                
+                h4{
+                    font-size: 1.5rem;
+                    margin-bottom: 15px;
+                    font-weight: 100;
+                }
+                h5{
+                    font-size: 1.2rem;
+                    font-weight: 100;
+                    color: $gold1;
+                }
+            }
+        }
+    }
+}
