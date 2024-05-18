@@ -1,0 +1,131 @@
+#event{
+    width: 78%;
+    margin: 0 auto;
+    .title {
+        h3{
+            font-size: 2.3rem;
+            font-weight: 100;
+            margin-bottom: -9px;
+        }
+        h2{
+            color: $white2;
+            font-size: 2rem;
+        }
+        .silverware{
+            margin: 30px auto;
+        }
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "g1 g3"
+        "g2 g3";
+        gap: 25px;
+
+        .date_container{
+
+            display: flex;
+            .date{
+                background: $black1;
+                color: $white2;
+                width: 80px;
+                height: 80px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h4{
+                    font-weight: 100;
+                    font-size: 1.6rem;
+                }
+                p{
+                    margin-top: -8px;
+                }
+            }
+        }
+        .event_container{
+            background: $white2;
+            h5{
+                font-size: 1.5rem;
+                font-weight: 100;
+                color: $gray1;
+                width: auto;
+                margin: 8px 15px;
+            }
+            .event_info{
+                display: flex;
+                align-items: center;
+                color: $gray2;
+                margin: 25px 15px;
+                > *{
+                    margin-right: 6px;
+                }
+            }
+            button{
+                background: $white2;
+                color: $gray1;
+                border: none;
+                height: 45px;
+                width: 170px;
+                cursor: pointer;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+        }
+
+        .grid_one{
+            grid-area: g1;
+            .date_container{
+                background: url(../img/event-01.jpg) center/cover;
+            }
+        }
+
+        .grid_two {
+            grid-area: g2;
+            .date_container{
+                background: url(../img/event-02.jpg) center/cover;
+            }
+        }
+
+        .grid_one, .grid_two{
+            display: grid;
+            grid-template-columns: 35% 65%;
+            .event_container{
+                padding: 20px 15px;
+            }
+            .event_container, h5{
+                text-align: left;
+            }
+            button{
+            width: auto;
+            margin-left: 15px;
+            }
+        }
+        .right_container{
+            grid-area: g3;
+            background: url(../img/event-03.jpg) center/cover;
+            display: flex;
+            .box_container{
+                background: $white2;
+                width: 90%;
+                margin: 20px auto;
+                .event_container{
+                    margin-top: 45px;
+                    .event_info{
+                    justify-content: center;
+                    }
+                    button{
+                        margin-top: 65px;
+                    }
+                }
+            }
+                
+
+        }
+    }
+}
