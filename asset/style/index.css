@@ -26,6 +26,10 @@ html {
 a, a:visited {
   color: rgb(255, 254, 254);
   text-decoration: none;
+  transition: 0.2s;
+}
+a:hover, a:visited:hover {
+  color: rgb(165, 114, 72);
 }
 
 h1, h2, h4 {
@@ -110,6 +114,13 @@ header nav .nav_right ul {
     justify-content: space-around;
     width: 150px;
   }
+}
+header nav .nav_right ul i {
+  transition: 0.2s;
+  cursor: pointer;
+}
+header nav .nav_right ul i:hover {
+  transform: scale(1.3);
 }
 header .header_content {
   margin: 0 auto;
@@ -240,6 +251,14 @@ header .header_content .header_box p {
 #menu .container .menu_nav li {
   position: relative;
   display: block;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#menu .container .menu_nav li:hover {
+  color: rgb(165, 114, 72);
+}
+#menu .container .menu_nav li:hover:after {
+  background: rgb(165, 114, 72);
 }
 #menu .container .menu_nav li:after {
   content: "";
@@ -249,6 +268,7 @@ header .header_content .header_box p {
   background: white;
   transform: translateX(-100%);
   bottom: -10px;
+  transition: 0.4s;
 }
 #menu .container .menu_container {
   background: rgb(238, 238, 238);
@@ -393,11 +413,19 @@ header .header_content .header_box p {
   border-bottom: 1px rgb(187, 188, 189) solid;
   text-align: left;
 }
+#booking .container .right_container .box .form .grid_form select:focus,
+#booking .container .right_container .box .form .grid_form input:focus {
+  background: rgb(33, 32, 30);
+  color: rgb(165, 114, 72);
+}
 #booking .container .right_container .box .form .grid_form select option {
   text-align: left;
 }
 #booking .container .right_container .box .form .grid_form input[type=text] {
   color: rgb(93, 91, 86);
+}
+#booking .container .right_container .box .form .grid_form input[type=text]:focus {
+  color: rgb(165, 114, 72);
 }
 #booking .container .right_container .box .form button {
   background: rgb(33, 32, 30);
@@ -411,6 +439,11 @@ header .header_content .header_box p {
   letter-spacing: 4px;
   font-weight: bold;
   margin-top: 15px;
+  transition: 0.2s;
+}
+#booking .container .right_container .box .form button:hover {
+  background: rgb(165, 114, 72);
+  border: 2px solid rgb(165, 114, 72);
 }
 
 #event {
@@ -658,6 +691,12 @@ footer .right_container .newsletter input {
   padding: 7px 13px;
   width: 250px;
   color: rgb(187, 188, 189);
+  transition: 0.2s;
+}
+footer .right_container .newsletter input:focus {
+  background: rgb(187, 188, 189);
+  color: rgb(33, 32, 30);
+  border: none;
 }
 footer .right_container .social_network {
   display: flex;
@@ -677,6 +716,10 @@ footer .right_container .social_network ul {
 footer .right_container .social_network ul i {
   color: rgb(93, 91, 86);
   font-size: 1.2rem;
+  transition: 0.2s;
+}
+footer .right_container .social_network ul i:hover {
+  transform: scale(1.3);
 }
 @media screen and (max-width: 520px) {
   footer .right_container .social_network ul i {

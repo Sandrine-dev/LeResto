@@ -36,6 +36,15 @@
             li{
                 position: relative;
                 display: block;
+                transition: 0.4s;
+                cursor: pointer;
+                &:hover {
+                    color: $gold1;
+                    &:after{
+                        background: $gold1;
+                    }
+                }
+            
                 &:after{
                     content: "";
                     position: absolute;
@@ -44,6 +53,7 @@
                     background: white;
                     transform: translateX(-100%);
                     bottom: -10px;
+                    transition: 0.4s;
                 }
             }
         }

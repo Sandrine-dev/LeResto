@@ -58,6 +58,10 @@ html{
 a, a:visited{
   color: $white1;
   text-decoration: none;
+  transition: 0.2s;
+  &:hover {
+    color: $gold1;
+  }
 }
 
 h1, h2 , h4{

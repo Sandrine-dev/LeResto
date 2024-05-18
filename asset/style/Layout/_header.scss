@@ -39,7 +39,14 @@ header{
                 display: flex;
                 justify-content: space-around;
                 width: 150px;
-            }   
+            }
+            i{
+                transition: 0.2s;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
         }      
     }
 

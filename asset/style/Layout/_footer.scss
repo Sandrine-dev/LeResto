@@ -56,6 +56,12 @@ footer{
                 padding: 7px 13px;
                 width: 250px;
                 color: $gray2;
+                transition: 0.2s;
+                &:focus{
+                    background: $gray2;
+                    color: $black1;
+                    border: none;
+                }
             }
         }
         .social_network{
@@ -72,6 +78,10 @@ footer{
                 i{
                     color: $gray1;
                     font-size: 1.2rem;
+                     transition: 0.2s;
+                    &:hover {
+                        transform: scale(1.3);
+                    }
                     @media screen and (max-width: 520px) {
                         font-size: 0.9rem;
                     }   
